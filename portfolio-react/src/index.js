@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
+import HeroSection from './components/HeroSection';
+import backgroundImage from './assets/FXjpTMYaUAAZn5x.jpg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'auto', backgroundPosition: 'center', minHeight: '100vh' }}>
+      <Navbar />
+      <div className="container mx-auto px-4"> {/* Adjust container width as needed */}
+        <HeroSection />
+        {/* Other components */}
+      </div>
+    </div>
   </React.StrictMode>
 );
 
