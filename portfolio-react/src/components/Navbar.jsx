@@ -7,7 +7,7 @@ const Navbar = () => {
   const [hideLinks, setHideLinks] = useState(true);
 
   return (
-    <nav className="bg-slate-200 text-black fixed w-full z-10">
+    <nav className="bg-slate-200 text-black fixed w-full z-30">
       <div className="max-w-14xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo on the far left */}
