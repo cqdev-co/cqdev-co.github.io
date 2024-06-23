@@ -67,6 +67,25 @@ html {
   transform-origin: bottom left;
 }
 
+.icon-animation {
+  transition: transform 0.3s ease;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.icon-fade-in {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.icon-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

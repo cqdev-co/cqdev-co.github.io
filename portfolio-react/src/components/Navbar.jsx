@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HiMenuAlt3, HiX, HiSun, HiMoon, HiChevronRight, HiChevronLeft } from 'react-icons/hi';
+import { HiMenuAlt3, HiX, HiSun, HiMoon, HiChevronRight } from 'react-icons/hi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +7,7 @@ const Navbar = () => {
   const [hideLinks, setHideLinks] = useState(true);
 
   return (
-    <nav className="bg-slate-200 text-black fixed w-full z-30">
+    <nav className="bg-white text-black shadow-sm fixed w-full z-30">
       <div className="max-w-14xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo on the far left */}
@@ -16,25 +16,26 @@ const Navbar = () => {
           </div>
           
           {/* Navigation and other elements on the far right */}
-          <div className="flex items-center">
-            {!hideLinks && (
-              <div className="hidden md:flex space-x-4 ml-auto"> {/* This ml-auto pushes everything to the right */}
-                {/* Navigation Links */}
-                <a href="#about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors">About</a>
-                <a href="#portfolio" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors">Portfolio</a>
-                <a href="#contact" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors">Contact</a>
-                {/* Theme Toggle */}
-                <button onClick={() => setDarkMode(!darkMode)} className="text-xl rounded-full p-2 hover:bg-gray-200 transition">
-                  {darkMode ? <HiSun /> : <HiMoon />}
-                </button>
-              </div>
-            )}
-            <button onClick={() => setHideLinks(!hideLinks)} className="text-black hover:text-white hover:bg-gray-700 p-2 rounded-md">
-              {hideLinks ? <HiChevronRight className="h-6 w-6" /> : <HiChevronLeft className="h-6 w-6" />}
+          <div className="flex items-center space-x-4">
+            {/* Theme Toggle */}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className={`text-xl rounded-full p-2 transition icon-fade-in ${!hideLinks && 'icon-visible'}`}
+            >
+              {darkMode ? <HiSun /> : <HiMoon />}
+            </button>
+            <button
+              onClick={() => setHideLinks(!hideLinks)}
+              className={`text-black hover:text-white hover:bg-gray-700 p-2 rounded-md icon-animation ${!hideLinks && 'rotate-180'}`}
+            >
+              <HiChevronRight className="h-6 w-6" />
             </button>
             {/* Mobile menu button */}
             <div className="md:hidden ml-auto">
-              <button onClick={() => setIsOpen(!isOpen)} className="text-black hover:text-white hover:bg-gray-700 p-2 rounded-md">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-black hover:text-white hover:bg-gray-700 p-2 rounded-md"
+              >
                 {isOpen ? <HiX className="h-6 w-6" /> : <HiMenuAlt3 className="h-6 w-6" />}
               </button>
             </div>
@@ -45,7 +46,6 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white pb-3">
-          <a href="#home" className="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-200">Home</a>
           <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-200">About</a>
           <a href="#portfolio" className="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-200">Portfolio</a>
           <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-gray-200">Contact</a>

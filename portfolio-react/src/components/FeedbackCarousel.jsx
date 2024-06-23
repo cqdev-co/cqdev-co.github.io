@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -20,10 +20,10 @@ const feedbacks = [
   },
   {
     text: "Excellent team player and always delivers high-quality work.",
-    name: "Morgan McKinnies",
-    jobTitle: "Cybersecurity | RSBM",
-    company: "N/A",
-    profilePic: "https://media.licdn.com/dms/image/D5635AQF-4UrtIGyHdQ/profile-framedphoto-shrink_800_800/0/1715722981004?e=1718316000&v=beta&t=N9Jk_5MGHLlp9l7YzNjUMgfWdzS6zEoTtaDJZfMGVm0", // Replace with actual image URL
+    name: "James Robinson",
+    jobTitle: "CISO @ Netskope",
+    company: "Netskope",
+    profilePic: "https://media.licdn.com/dms/image/C4E03AQFhkoAoKZC8oA/profile-displayphoto-shrink_800_800/0/1584537191754?e=1724284800&v=beta&t=9pjKmwTeYtiGyMBNTaRYsJjwYs64D2R8SR-6Hgu2WJ8", // Replace with actual image URL
   },
   {
     text: "Conor has been nothing but a excellent candidate.",
@@ -49,12 +49,32 @@ const feedbacks = [
 ];
 
 const FeedbackCarousel = () => {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  const updateSlidesToShow = () => {
+    const width = window.innerWidth;
+    if (width < 480) {
+      setSlidesToShow(1);
+    } else if (width < 768) {
+      setSlidesToShow(2);
+    } else if (width < 1024) {
+      setSlidesToShow(3);
+    } else {
+      setSlidesToShow(4);
+    }
+  };
+
+  useEffect(() => {
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+    return () => window.removeEventListener('resize', updateSlidesToShow);
+  }, []);
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 22000,
-    slidesToShow: 4,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -69,7 +89,7 @@ const FeedbackCarousel = () => {
       <Slider {...settings}>
         {feedbacks.map((feedback, index) => (
           <div key={index} className="p-4 flex justify-center items-center">
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between border border-gray-200" style={{ width: '400px', height: '200px' }}>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between border border-gray-200" style={{ width: '300px', height: '200px' }}>
               <p className="text-center mb-4 text-gray-700">“{feedback.text}”</p>
               <div className="flex items-end w-full">
                 <img src={feedback.profilePic} alt={feedback.name} className="w-14 h-14 rounded-full flex-shrink-0" />
