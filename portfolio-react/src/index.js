@@ -4,12 +4,14 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import Landing from './components/LandingPage';
 import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
     <Landing />
+    <AboutMe />
   </React.StrictMode>
 );
 
