@@ -1,4 +1,6 @@
 import FeedbackCarousel from './FeedbackCarousel';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 const LandingPage = () => {
 
@@ -32,6 +34,12 @@ const LandingPage = () => {
                     <FeedbackCarousel />
                 </div>
             </footer>
+            <section id="about" className="pt-8">
+                <AboutMe />
+            </section>
+            <section id="projects">
+                <Projects />
+            </section>
         </div>
     );
 };
