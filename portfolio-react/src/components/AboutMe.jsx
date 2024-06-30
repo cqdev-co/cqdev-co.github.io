@@ -4,7 +4,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white p-4">
+    <div className="min-h-screen flex items-center justify-center bg-white">
       <div className="w-full max-w-6xl flex flex-col md:flex-row p-4">
         <div className="md:w-1/3 flex justify-center items-center p-4">
           <img 
@@ -13,7 +13,7 @@ const AboutMe = () => {
             className="rounded-lg shadow-md"
           />
         </div>
-        <div className="md:w-2/3 flex flex-col p-4">
+        <div className="md:w-2/3 flex flex-col font-sans p-4">
           <h2 className="text-4xl font-semibold mb-4 text-right">About <span className="gradient-text">Me</span></h2>
           <p className="text-base ml-48 mb-4 leading-tight text-justify max-w-none md:max-w-full">
             At <span className="gradient-text">Netskope</span>, I developed a strong foundation in automating Cloud Infrastructure deployments and implementing robust security measures.

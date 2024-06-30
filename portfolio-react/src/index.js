@@ -5,6 +5,7 @@ import './index.css';
 import Landing from './components/LandingPage';
 import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Navbar />
     <Landing />
     <AboutMe />
+    <Projects />
   </React.StrictMode>
 );
 

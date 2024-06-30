@@ -11,14 +11,14 @@ const LandingPage = () => {
                         <p className={`text-7xl p-2 transition-all duration-500 gradient-text font-sans`}>
                             Hello
                         </p>
-                        <p className="text-3xl p-2 transition-all duration-500 font-mono">
+                        <p className="text-3xl p-2 transition-all duration-500 font-sans">
                             Welcome to my <span className="gradient-text">Portfolio</span>
                         </p>
                     </div>
                 </section>
                     {/** Navigation **/}
                     <div className="bg-white w-2/6 lg:w-4/10 flex h-65 items-center justify-center fade-in rounded-lg shadow-lg p-10 mt-20" style={{ height: '40vh' }}>
-                    <ul className="space-y-6 text-3xl text-gray-800 font-quicksand">
+                    <ul className="space-y-6 text-3xl text-gray-800 font-sans">
                         <li className="pb-4"> <a href="#about" className="hover:text-blue-500 transition duration-300">About Me</a> </li>
                         <li className="pb-4 relative group"> <a href="#projects" className="hover:text-blue-500 transition duration-300 gradient-text">Projects</a>
 
