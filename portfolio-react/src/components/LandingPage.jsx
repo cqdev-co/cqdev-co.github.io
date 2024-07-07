@@ -29,7 +29,7 @@ const LandingPage = () => {
                     </ul>
                     </div>
                 </div>
-            <footer className="py-3 w-full p-9 fade-in" style={{ height: '40vh' }}>
+            <footer className="py-24 w-full p-24 fade-in" style={{ height: '50vh' }}>
                 <div className="flex items-center justify-center h-full w-full bg-custom-gradient">
                     <FeedbackCarousel />
                 </div>

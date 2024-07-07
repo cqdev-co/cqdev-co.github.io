@@ -28,6 +28,9 @@ module.exports = {
         karla: ['Karla', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
         barlow: ['Barlow', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
+      transitionProperty: {
+        'colors': 'background-color, border-color, color, fill, stroke',
+      },
     },
   },
   plugins: [],

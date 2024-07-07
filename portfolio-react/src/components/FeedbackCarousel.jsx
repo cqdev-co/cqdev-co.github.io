@@ -53,7 +53,7 @@ const FeedbackCarousel = () => {
 
   const updateSlidesToShow = () => {
     const width = window.innerWidth;
-    if (width < 480) {
+    if (width < 640) {
       setSlidesToShow(1);
     } else if (width < 768) {
       setSlidesToShow(2);
@@ -73,29 +73,56 @@ const FeedbackCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 22000,
+    speed: 20000,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     arrows: false,
     centerMode: true,
-    centerPadding: '0', // Adjust the padding to space out the cards
-    cssEase: 'linear', // Linear easing for continuous effect
+    centerPadding: '10px',
+    cssEase: 'linear',
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 18000,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed: 17000,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 16000,
+        }
+      }
+    ]
   };
 
   return (
-    <div className="relative h-full w-full">
+    <div className="relative w-full py-8">
       <Slider {...settings}>
         {feedbacks.map((feedback, index) => (
-          <div key={index} className="p-4 flex justify-center items-center">
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between border border-gray-200" style={{ width: '300px', height: '200px' }}>
-              <p className="text-center mb-4 text-gray-700">“{feedback.text}”</p>
-              <div className="flex items-end w-full">
-                <img src={feedback.profilePic} alt={feedback.name} className="w-14 h-14 rounded-full flex-shrink-0" />
-                <div className="ml-4">
-                  <p className="font-bold text-lg text-gray-900">{feedback.name}</p>
-                  <p className="text-sm text-gray-600">{feedback.jobTitle}</p>
+          <div key={index} className="px-2">
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md flex flex-col justify-between border border-gray-200 h-full" style={{ height: '200px' }}>
+              <p className="text-center mb-4 text-gray-700 text-sm md:text-base">"{feedback.text}"</p>
+              <div className="flex items-center w-full">
+                <img src={feedback.profilePic} alt={feedback.name} className="w-12 h-12 md:w-14 md:h-14 rounded-full flex-shrink-0" />
+                <div className="ml-3 md:ml-4">
+                  <p className="font-bold text-base md:text-lg text-gray-900">{feedback.name}</p>
+                  <p className="text-xs md:text-sm text-gray-600">{feedback.jobTitle}</p>
                 </div>
               </div>
             </div>
