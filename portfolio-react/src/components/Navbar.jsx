@@ -16,9 +16,9 @@ const Navbar = () => {
           
           {/* Navigation links in the center */}
           <div className={`hidden md:flex space-x-4 transition-opacity duration-300 ${hideLinks ? 'opacity-0' : 'opacity-100'}`}>
-            <a href="#about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
-            <a href="#portfolio" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Portfolio</a>
-            <a href="#contact" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
+            <a href="http://localhost:3000/#about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
+            <a href="http://localhost:3000/#projects" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a>
+            <a href="http://localhost:3000/#contact" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
           </div>
           
           {/* Controls on the right */}

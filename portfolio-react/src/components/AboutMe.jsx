@@ -4,7 +4,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white">
+    <div className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-6xl flex flex-col md:flex-row p-4">
         <div className="md:w-1/3 flex justify-center items-center">
           <img 
