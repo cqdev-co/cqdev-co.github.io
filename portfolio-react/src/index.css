@@ -41,6 +41,14 @@ html {
   display: block;
 }
 
+body {
+  @apply bg-white text-black transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-black text-white;
+}
+
 .fade-in {
   animation: fadeIn 2s ease-in;
 }

@@ -21,34 +21,34 @@ const LandingPage = () => {
     ];
 
     return (
-        <div className="flex flex-col min-h-screen">
-            <div className="flex flex-1" style={{ height: 'calc(100vh - 30vh)' }}>
-                <section className="flex-1 flex p-12">
-                    <div className="text-left m-24">
-                        <p className="text-7xl p-2 transition-all duration-500 gradient-text font-sans">
+        <div className="flex flex-col min-h-screen dark:bg-gray-800 text-black dark:text-white">
+            <div className="flex flex-col items-center md:flex-row flex-1 p-4 md:p-12 space-y-3 md:space-y-0 md:space-x-8">
+                <section className="flex-1 flex md:p-12">
+                    <div className="md:text-left m-24 mb-10 md:mb-10 text-center">
+                        <p className="text-4xl md:text-7xl p-2 transition-all duration-500 gradient-text font-sans">
                             Hello
                         </p>
-                        <p className="text-3xl p-2 transition-all duration-500 font-sans">
+                        <p className="text-xl md:text-2xl p-2 transition-all duration-500 font-sans justify-center">
                             Welcome to my <span className="gradient-text">Portfolio</span>
                         </p>
                     </div>
                 </section>
-                <section className="flex-1 flex items-center justify-center">
-                    <div className="grid grid-cols-2 gap-8">
+                <section className="flex-1 flex items-center justify-center p-6">
+                    <div className="grid grid-cols-2 gap-4 md:gap-8">
                         {stats.map((stat, index) => (
                             <div key={index} className="text-center">
-                                <p className="text-4xl font-bold gradient-text">
+                                <p className="text-2xl md:text-4xl font-bold gradient-text">
                                     {typeof stat.value === 'number' && stat.value <= 100
                                         ? Math.min(count, stat.value)
                                         : stat.value}
                                 </p>
-                                <p className="text-xl mt-2">{stat.label}</p>
+                                <p className="text-sm md:text-xl mt-2">{stat.label}</p>
                             </div>
                         ))}
                     </div>
                 </section>
             </div>
-            <footer className="py-24 w-full p-24 fade-in" style={{ height: '50vh' }}>
+            <footer className="py-30 w-full p-30 fade-in p-24">
                 <div className="flex items-center justify-center h-full w-full bg-custom-gradient">
                     <FeedbackCarousel />
                 </div>

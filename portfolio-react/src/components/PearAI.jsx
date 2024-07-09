@@ -11,9 +11,10 @@ const PearAI = () => {
   };
 
   return (
+    <div className="min-h-screen dark:bg-gray-800 text-black dark:text-white">
     <motion.div 
       {...fadeIn}
-      className="container mx-auto flex flex-col items-start p-8 md:p-24"
+      className="container mx-auto flex flex-col items-start p-8 md:p-24 "
     >
       <motion.div 
         {...fadeIn}
@@ -30,17 +31,17 @@ const PearAI = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="flex space-x-2 ml-20"
           >
-            <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/trypear" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+            <motion.a whileHover={{ scale: 1.3 }} href="https://github.com/trypear" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
               <FontAwesomeIcon icon={faGithub} size="lg" />
             </motion.a>
-            <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/company/trypearai/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
+            <motion.a whileHover={{ scale: 1.3 }} href="https://www.linkedin.com/company/trypearai/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </motion.a>
           </motion.div>
         </div>
         <div className="flex flex-col items-end mr-6">
-          <span className="text-gray-700">Company: PearAI</span>
-          <span className="text-gray-700">contributed by Conor Quinlan</span>
+          <span className="font-sans">Company: PearAI</span>
+          <span className="font-sans">contributed by Conor Quinlan</span>
         </div>
       </motion.div>
       <motion.div 
@@ -71,6 +72,7 @@ const PearAI = () => {
         </div>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 

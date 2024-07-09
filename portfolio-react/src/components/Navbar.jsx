@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { HiSun, HiMoon, HiChevronRight } from 'react-icons/hi';
 
-const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+const Navbar = ({darkMode, setDarkMode}) => {
   const [hideLinks, setHideLinks] = useState(true);
 
   return (
-    <nav className={`fixed w-full z-30 transition-colors duration-300 ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+    <nav className={`fixed w-full z-30 transition-colors duration-300 border-gray-200 shadow-md ${darkMode ? 'bg-bg-gray-800 text-white' : 'bg-white text-black'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo on the left */}

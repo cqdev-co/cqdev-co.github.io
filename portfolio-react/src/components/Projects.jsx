@@ -19,7 +19,7 @@ const Projects = () => {
           </div>
           {/* Title / Description */}
           <h2 className="relative text-2xl font-bold gradient-text">PearAI</h2>
-          <p className="relative mt-2">The Open Source AI‑Powered Code Editor</p>
+          <p className="relative mt-2 text-black">The Open Source AI‑Powered Code Editor</p>
           <div className="flex space-x-2 mt-4 text-white">
             {/* Tags */}
             <span className="bg-gray-700 rounded-full px-3 py-1">CI/CD</span>
