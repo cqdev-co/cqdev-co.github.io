@@ -50,9 +50,9 @@ const PearAI = () => {
       <motion.div 
         {...fadeIn}
         transition={{ delay: 0.6, duration: 0.8 }}
-        className="flex flex-col md:flex-row items-center mt-2 text-sm md:text-base"
+        className="flex flex-col md:flex-row items-start mt-2 text-sm md:text-base"
       >
-        <div className="w-full lg:w-3/5 p-4 flex justify-center items-center">
+        <div className="w-full md:w-1/2 p-4 flex justify-center items-start">
           <motion.img 
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -62,7 +62,7 @@ const PearAI = () => {
           />
         </div>
         <div className="w-full md:w-1/2 p-2 flex-col">
-          <h2 className="text-lg md:text-xl font-bold mb-2">Introduction</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-2 mt-8">Introduction</h2>
           <p className="text-sm md:text-base leading-snug text-justify">
             PearAI is an open-source, AI-powered code editor designed to enhance the development 
             process by integrating AI seamlessly into the workflow. Built as a fork of VSCode, 
@@ -71,6 +71,22 @@ const PearAI = () => {
             and handle syntax and edge cases efficiently. It also supports referencing other files 
             and content within the chat. PearAI is community-driven, with options for developers to 
             contribute and discuss improvements on their GitHub and Discord platforms.
+          </p>
+          <h2 className="text-lg md:text-xl font-bold mb-2 mt-10">CI/CD</h2>
+          <p className="text-sm md:text-base leading-snug text-justify">
+          I've been developing a CI/CD pipeline for an open-source application to ensure builds are 
+          tested across Linux, Mac, and Windows platforms. This process has proven invaluable, as it 
+          helps catch unbuildable pull requests early in the development cycle, maintaining the integrity
+          and stability of the project. This system is still actively in use today, consistently enhancing
+          the efficiency and reliability of our build process and facilitating smoother contributions from the community.
+          </p>
+          <h2 className="text-lg md:text-xl font-bold mb-2 mt-10">Backend</h2>
+          <p className="text-sm md:text-base leading-snug text-justify">
+          I have also contributed to PearAI's Server and Submodule, integrating key features such as Anthropic support,
+          which allows users to utilize the platform through a Free Trial or by providing their own API key. Additionally,
+          I have applied Secure Software Engineering practices, ensuring robust and secure coding standards are maintained.
+          This comprehensive approach not only enhances the functionality and user experience but also reinforces the security
+          and reliability of the software.
           </p>
         </div>
       </motion.div>
