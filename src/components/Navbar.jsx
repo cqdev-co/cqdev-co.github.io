@@ -10,14 +10,14 @@ const Navbar = ({darkMode, setDarkMode}) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo on the left */}
           <div className="flex-shrink-0">
-            <img src="./portfolio/logo192.png" alt="Logo" className="h-8 w-auto" />
+            <img src="./logo192.png" alt="Logo" className="h-8 w-auto" />
           </div>
           
           {/* Navigation links in the center */}
           <div className={`hidden md:flex space-x-4 transition-opacity duration-300 ${hideLinks ? 'opacity-0' : 'opacity-100'}`}>
-            <a href="http://localhost:3000/portfolio#about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
-            <a href="http://localhost:3000/portfolio#projects" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a>
-            <a href="http://localhost:3000/portfolio#contact" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
+            <a href="http://localhost:3000/#about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
+            <a href="http://localhost:3000/#projects" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a>
+            <a href="http://localhost:3000/#contact" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
           </div>
           
           {/* Controls on the right */}

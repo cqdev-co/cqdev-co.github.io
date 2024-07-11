@@ -26,15 +26,15 @@ const Projects = () => {
   const projectsData = [
     {
       to: "./pearai",
-      imageSrc: './portfolio/images/trypearai_logo.jpeg',
+      imageSrc: './images/trypearai_logo.jpeg',
       title: "PearAI",
       description: "The Open Source AI‑Powered Code Editor",
       tags: ["CI/CD", "Backend", "Python"]
     },
     // Add more projects here
     {
-      to: "portfolio/",
-      imageSrc: './portfolio/logo512.png',
+      to: "/",
+      imageSrc: './logo512.png',
       title: "Portfolio Project",
       description: "Wrote and developed personal Portfolio",
       tags: ["React", "Frontend", "JavaScript"]
