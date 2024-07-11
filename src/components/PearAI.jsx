@@ -56,7 +56,7 @@ const PearAI = () => {
           <motion.img 
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            src='./images/pearai_server.jpg' 
+            src='../images/pearai_server.jpg' 
             alt="Sample" 
             className="w-full h-auto object-cover rounded-lg" 
           />
