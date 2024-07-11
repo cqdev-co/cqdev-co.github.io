@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
 
 const PearAI = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const fadeIn = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
@@ -62,7 +67,7 @@ const PearAI = () => {
           />
         </div>
         <div className="w-full md:w-1/2 p-2 flex-col">
-          <h2 className="text-lg md:text-xl font-bold mb-2 mt-8">Introduction</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-2 mt-2">Introduction</h2>
           <p className="text-sm md:text-base leading-snug text-justify">
             PearAI is an open-source, AI-powered code editor designed to enhance the development 
             process by integrating AI seamlessly into the workflow. Built as a fork of VSCode, 
@@ -72,7 +77,7 @@ const PearAI = () => {
             and content within the chat. PearAI is community-driven, with options for developers to 
             contribute and discuss improvements on their GitHub and Discord platforms.
           </p>
-          <h2 className="text-lg md:text-xl font-bold mb-2 mt-10">CI/CD</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-2 mt-20">CI/CD</h2>
           <p className="text-sm md:text-base leading-snug text-justify">
           I've been developing a CI/CD pipeline for an open-source application to ensure builds are 
           tested across Linux, Mac, and Windows platforms. This process has proven invaluable, as it 
@@ -80,7 +85,7 @@ const PearAI = () => {
           and stability of the project. This system is still actively in use today, consistently enhancing
           the efficiency and reliability of our build process and facilitating smoother contributions from the community.
           </p>
-          <h2 className="text-lg md:text-xl font-bold mb-2 mt-10">Backend</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-2 mt-20">Backend</h2>
           <p className="text-sm md:text-base leading-snug text-justify">
           I have also contributed to PearAI's Server and Submodule, integrating key features such as Anthropic support,
           which allows users to utilize the platform through a Free Trial or by providing their own API key. Additionally,

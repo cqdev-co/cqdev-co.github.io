@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import FeedbackCarousel from './FeedbackCarousel';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import ContactMe from './ContactMe';
 
 const LandingPage = () => {
     const [count, setCount] = useState(0);
@@ -14,10 +15,10 @@ const LandingPage = () => {
     }, []);
 
     const stats = [
-        { label: 'Projects Completed', value: 15 },
-        { label: 'Years Experience', value: 5 },
-        { label: 'Happy Clients', value: 30 },
-        { label: 'Code Lines Written', value: '100K+' },
+        { label: 'Projects Completed', value: 3 },
+        { label: 'Years Experience', value: 1 },
+        { label: 'Happy Clients', value: 1 },
+        { label: 'Code Lines Written', value: '20K+' },
     ];
 
     return (
@@ -58,6 +59,9 @@ const LandingPage = () => {
             </section>
             <section id="projects">
                 <Projects />
+            </section>
+            <section id="contact">
+                <ContactMe />
             </section>
         </div>
     );

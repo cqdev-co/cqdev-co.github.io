@@ -43,7 +43,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen bg- flex flex-col items-center px-4 md:px-0">
-      <h1 className="text-3xl md:text-4xl font-sans font-bold mt-10 md:mt-20 gradient-text"> Projects </h1>
+      <h1 className="text-3xl md:text-4xl font-sans font-bold mt-5 md:mt-10 gradient-text"> Projects </h1>
       <p className="text-center text-gray-600 text-sm md:text-base mb-6"> Coding Projects Showcase </p>
       {/* Project Cards */}
       <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-start w-full md:ml-24 gap-8">

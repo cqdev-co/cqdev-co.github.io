@@ -106,6 +106,7 @@ const FeedbackCarousel = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           speed: 16000,
+          centerMode: false,
         }
       }
     ]
@@ -116,13 +117,13 @@ const FeedbackCarousel = () => {
       <Slider {...settings}>
         {feedbacks.map((feedback, index) => (
           <div key={index} className="px-2">
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md flex flex-col justify-between border border-gray-200 h-full" style={{ height: '200px' }}>
-              <p className="text-center mb-4 text-gray-700 text-sm md:text-base">"{feedback.text}"</p>
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-between border border-gray-200 h-full" style={{ minHeight: '220px' }}>
+              <p className="text-center mb-4 text-gray-700 text-sm">{`"${feedback.text}"`}</p>
               <div className="flex items-center w-full">
-                <img src={feedback.profilePic} alt={feedback.name} className="w-12 h-12 md:w-14 md:h-14 rounded-full flex-shrink-0" />
-                <div className="ml-3 md:ml-4">
-                  <p className="font-bold text-base md:text-lg text-gray-900">{feedback.name}</p>
-                  <p className="text-xs md:text-sm text-gray-600">{feedback.jobTitle}</p>
+                <img src={feedback.profilePic} alt={feedback.name} className="w-12 h-12 rounded-full flex-shrink-0" />
+                <div className="ml-3 flex-grow">
+                  <p className="font-bold text-sm text-gray-900">{feedback.name}</p>
+                  <p className="text-xs text-gray-600 line-clamp-2">{feedback.jobTitle}</p>
                 </div>
               </div>
             </div>
