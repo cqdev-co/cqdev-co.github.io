@@ -42,7 +42,7 @@ const EmailSection = () => {
           Whether you have a question or just want to say hi, I'll do my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-4 mb-6">
-            <motion.a whileHover={{ scale: 1.3 }} href="https://www.linkedin.com/conorgquinlan/" 
+            <motion.a whileHover={{ scale: 1.3 }} href="https://www.linkedin.com/in/conorgquinlan/" 
                         target="_blank" rel="noopener noreferrer" 
                         className="text-gray-600 hover:text-blue-700">
                 <FontAwesomeIcon icon={faLinkedin} size="lg" />

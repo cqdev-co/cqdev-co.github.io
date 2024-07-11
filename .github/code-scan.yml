@@ -1,0 +1,27 @@
+name: Check for Vulnerabilities
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs every Sunday
+  push:
+    branches:
+      - main
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run npm audit
+        run: npm audit

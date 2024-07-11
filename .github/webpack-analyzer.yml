@@ -1,13 +1,15 @@
-name: Deploy React Portfolio
+name: Bundle Size Analysis
 
 on:
-    workflow_dispatch:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
+  analyze:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,8 +27,5 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_TOKEN }} # yamllint disable-line
-          publish_dir: ./build
+      - name: Analyze bundle size
+        run: npm run analyze
