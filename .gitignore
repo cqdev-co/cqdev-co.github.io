@@ -1,2 +1,3 @@
 # Ignore Node Modules
 /portfolio-react/node_modules
+*node_modules
