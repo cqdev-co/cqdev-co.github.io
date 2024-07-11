@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="w-full max-w-6xl flex flex-col md:flex-row p-4">
         <div className="md:w-1/3 flex justify-center items-center mb-6 md:mb-0">
           <img 
-            src="./images/main.jpg" 
+            src="../portfolio/images/main.jpg" 
             alt="Conor Quinlan" 
             className="rounded-lg shadow-md w-72 h-128 object-cover md:w-auto md:h-auto"
           />

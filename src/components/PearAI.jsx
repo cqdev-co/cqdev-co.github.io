@@ -23,7 +23,7 @@ const PearAI = () => {
       >
         <div className="flex flex-col items-center md:items-start mb-4 md:mb-0">
           <div className="flex items-center mt-12 md:mt-0">
-            <img src='./images/trypearai_logo.jpeg' alt="PearAI Logo" className="w-16 h-16" />
+            <img src='../portfolio/images/trypearai_logo.jpeg' alt="PearAI Logo" className="w-16 h-16" />
             <span className="ml-4 text-2xl font-bold">PearAI</span>
           </div>
           <motion.div 
@@ -56,7 +56,7 @@ const PearAI = () => {
           <motion.img 
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            src='../images/pearai_server.jpg' 
+            src='../portfolio/images/pearai_server.jpg' 
             alt="Sample" 
             className="w-full h-auto object-cover rounded-lg" 
           />

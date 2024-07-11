@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-react",
+  "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://cqdev-co.github.io/",
+  "homepage": "https://cqdev-co/github.io/portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",

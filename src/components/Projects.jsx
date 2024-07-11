@@ -25,18 +25,18 @@ const ProjectCard = ({ to, imageSrc, title, description, tags }) => (
 const Projects = () => {
   const projectsData = [
     {
-      to: "/pearai",
-      imageSrc: './images/trypearai_logo.jpeg',
+      to: "./pearai",
+      imageSrc: './portfolio/images/trypearai_logo.jpeg',
       title: "PearAI",
       description: "The Open Source AI‑Powered Code Editor",
       tags: ["CI/CD", "Backend", "Python"]
     },
     // Add more projects here
     {
-      to: "/",
-      imageSrc: './images/project2_logo.jpeg',
-      title: "Project 2",
-      description: "Another amazing project",
+      to: "portfolio/",
+      imageSrc: './portfolio/logo512.png',
+      title: "Portfolio Project",
+      description: "Wrote and developed personal Portfolio",
       tags: ["React", "Frontend", "JavaScript"]
     },
   ];

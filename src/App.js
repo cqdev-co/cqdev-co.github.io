@@ -16,10 +16,10 @@ function App () {
       <Router>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/pearai" element={<PearAI />} />
+          <Route path="portfolio/" element={<LandingPage />} />
+          <Route path="portfolio/about" element={<AboutMe />} />
+          <Route path="portfolio/projects" element={<Projects />} />
+          <Route path="portfolio/pearai" element={<PearAI />} />
         </Routes>
       </Router>
     </div>
