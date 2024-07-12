@@ -34,10 +34,10 @@ const feedbacks = [
   },
   {
     text: "Remarkable skills and a pleasure to work with.",
-    name: "Lu Ray Waldemer",
-    jobTitle: "Solutions Engineer | Analyst | Educator",
-    company: "N/A",
-    profilePic: "https://media.licdn.com/dms/image/D5603AQG7k3-lTCsZzQ/profile-displayphoto-shrink_800_800/0/1713398527883?e=1723075200&v=beta&t=n7B5N4AXzZqf1PlWkiKkLmR9zp3nIR1-rcMVCffAnPk", // Replace with actual image URL
+    name: "Louise Zhi",
+    jobTitle: "CSO Data Analyst Intern",
+    company: "Netskope",
+    profilePic: "https://media.licdn.com/dms/image/D5603AQEoyxcBjhs-nA/profile-displayphoto-shrink_400_400/0/1707509289772?e=1726099200&v=beta&t=-D4ZskzqGtlyzpzwFKVnLV7e_K5HkzyffKomXvsiGY4", // Replace with actual image URL
   },
   {
     text: "Excellent team player and always delivers high-quality work.",
