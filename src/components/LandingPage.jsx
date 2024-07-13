@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import FeedbackCarousel from './FeedbackCarousel';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import ContactMe from './ContactMe';
 
 const LandingPage = () => {
     const [count, setCount] = useState(0);
@@ -59,9 +58,6 @@ const LandingPage = () => {
             </section>
             <section id="projects">
                 <Projects />
-            </section>
-            <section id="contact">
-                <ContactMe />
             </section>
         </div>
     );

@@ -19,14 +19,14 @@ const feedbacks = [
     profilePic: "https://media.licdn.com/dms/image/D5603AQHKfAJfLHvUBA/profile-displayphoto-shrink_800_800/0/1716422812661?e=1723075200&v=beta&t=ZyPD20SeGJ0dIFkN6QRGHdQORMfF46XaSlcpRoiIyTY", // Replace with actual image URL
   },
   {
-    text: "Sample.",
+    text: "Developed some products that will stay in our environment for a long time.",
     name: "James Robinson",
     jobTitle: "CISO @ Netskope",
     company: "Netskope",
     profilePic: "https://media.licdn.com/dms/image/C4E03AQFhkoAoKZC8oA/profile-displayphoto-shrink_800_800/0/1584537191754?e=1724284800&v=beta&t=9pjKmwTeYtiGyMBNTaRYsJjwYs64D2R8SR-6Hgu2WJ8", // Replace with actual image URL
   },
   {
-    text: "Sample.",
+    text: "One of the brightest interns we have had.",
     name: "Damian Chung",
     jobTitle: "Business Information Security Officer (BISO)",
     company: "Netskope",
@@ -34,13 +34,13 @@ const feedbacks = [
   },
   {
     text: "Conor is amazing at coding and always super supportive. He's a great person to work with and an excellent candidate.",
-    name: "Louise Zhi",
+    name: "Tianjing Zhi",
     jobTitle: "CSO Data Analyst Intern",
     company: "Netskope",
     profilePic: "https://media.licdn.com/dms/image/D5603AQEoyxcBjhs-nA/profile-displayphoto-shrink_400_400/0/1707509289772?e=1726099200&v=beta&t=-D4ZskzqGtlyzpzwFKVnLV7e_K5HkzyffKomXvsiGY4", // Replace with actual image URL
   },
   {
-    text: "Sample.",
+    text: "Developed a lot of automations and products for the SOC.",
     name: "Ally Frame",
     jobTitle: "Assistant Manager, Security Operations",
     company: "Netskope",
@@ -113,7 +113,7 @@ const FeedbackCarousel = () => {
   };
 
   return (
-    <div className="relative w-full py-8">
+    <div className="w-full py-8">
       <Slider {...settings}>
         {feedbacks.map((feedback, index) => (
           <div key={index} className="px-2">
